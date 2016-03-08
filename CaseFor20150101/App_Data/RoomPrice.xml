@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PriceList>
+  <Room id="102">
+    <WorkDayPrice>1,980</WorkDayPrice>
+    <WeekEndPrice>2,800</WeekEndPrice>
+    <HoildayPrice>3,300</HoildayPrice>
+  </Room>
+  <Room id="202">
+    <WorkDayPrice>1,980</WorkDayPrice>
+    <WeekEndPrice>2,800</WeekEndPrice>
+    <HoildayPrice>3,300</HoildayPrice>
+  </Room>
+  <Room id="302">
+    <WorkDayPrice>1,980</WorkDayPrice>
+    <WeekEndPrice>2,800</WeekEndPrice>
+    <HoildayPrice>3,300</HoildayPrice>
+  </Room>
+  <Room id="305">
+    <WorkDayPrice>3,720</WorkDayPrice>
+    <WeekEndPrice>4,900</WeekEndPrice>
+    <HoildayPrice>6,200</HoildayPrice>
+  </Room>
+  <Room id="206">
+    <WorkDayPrice>5,280</WorkDayPrice>
+    <WeekEndPrice>6,700</WeekEndPrice>
+    <HoildayPrice>8,800</HoildayPrice>
+  </Room>
+  <Room id="108">
+    <WorkDayPrice>6,900</WorkDayPrice>
+    <WeekEndPrice>9,900</WeekEndPrice>
+    <HoildayPrice>11,500</HoildayPrice>
+  </Room>
+</PriceList>

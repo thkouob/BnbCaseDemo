@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PlayerYlianWebSiteConfig>
+  <HeaderMenuDisPlayList>
+    <HeaderMenu id="0">
+      <PageName>AboutPage</PageName>
+      <PageTitle>About</PageTitle>
+      <Link>IndexPage#about</Link>
+      <PageTitleInChinese>關於我們</PageTitleInChinese>
+      <PageTitleInEnglish>About</PageTitleInEnglish>
+    </HeaderMenu>
+    <HeaderMenu id="1">
+      <PageName>NewsPage</PageName>
+      <PageTitle>News</PageTitle>
+      <Link>IndexPage#news</Link>
+      <PageTitleInChinese>最新消息</PageTitleInChinese>
+      <PageTitleInEnglish>News</PageTitleInEnglish>
+    </HeaderMenu>
+    <HeaderMenu id="2">
+      <PageName>RoomInfoPage</PageName>
+      <PageTitle>RoomInfo</PageTitle>
+      <Link>IndexPage#roomInfo</Link>
+      <PageTitleInChinese>客房資訊</PageTitleInChinese>
+      <PageTitleInEnglish>Room Info</PageTitleInEnglish>
+    </HeaderMenu>
+    <HeaderMenu id="3">
+      <PageName>AttractionPage</PageName>
+      <PageTitle>Attraction</PageTitle>
+      <Link>IndexPage#attraction</Link>
+      <PageTitleInChinese>熱門景點</PageTitleInChinese>
+      <PageTitleInEnglish>Attraction</PageTitleInEnglish>
+    </HeaderMenu>
+    <HeaderMenu id="4">
+      <PageName>ContactPage</PageName>
+      <PageTitle>Contact</PageTitle>
+      <Link>IndexPage#contact</Link>
+      <PageTitleInChinese>聯絡我們</PageTitleInChinese>
+      <PageTitleInEnglish>Contact</PageTitleInEnglish>
+    </HeaderMenu>
+  </HeaderMenuDisPlayList>
+</PlayerYlianWebSiteConfig>

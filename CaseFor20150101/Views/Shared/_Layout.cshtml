@@ -1,0 +1,119 @@
+﻿@using CaseFor20150101.Models
+@model PlayerYlianWebSiteViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="keywords" content="玩咖民宿,假期365玩咖,宜蘭,宜蘭精品旅館,羅東精品旅館,宜蘭民宿,民宿,推薦景點,羅東夜市,熱門,吃喝玩樂,異國風情,田野風光,雙旅行,夜宿宜蘭,享受,包棟優惠">
+    <meta name="description" content="玩咖民宿-全新精品旅館在宜蘭，溫馨舒適、滿載夢想的極光列車、兩人時光的浪漫河畔、雙雙漫步歐美小鎮、四人房、六人房、六人獨立雙人房、大空間享受假期,包棟優惠">
+    <title>玩咖民宿</title>
+
+   <!--to do bundule-->
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type='text/css' media='all' />
+    <link href="~/Content/CSS/WeiKaCss.css" rel="stylesheet" type='text/css' media='all' />   
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>   
+    <script src="~/Scripts/jquery-2.1.3.js"></script>   
+    <script src="~/Scripts/jquery-migrate-1.2.1.js"></script>
+
+</head>
+<body class="home page">
+    
+    @*<div class="hfeed site">*@
+
+    <header class="headerMenu" role="banner">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h2 class="navbarPageTitle">
+                        <a href="IndexPage#image_carousel">
+                          
+                            <img width="450" height="91" src="~/Content/SvgImage/logo20140104.png"
+                                 srcset="~/Content/SvgImage/logo20140104.png 1700w"
+                                 class="img-responsive">
+
+                        </a>
+                    </h2>
+                </div>
+                <div id="navbarCollapse" class="collapse navbar-collapse bs-navbar-collapse">
+                    <ul id="menuNavigation" class="nav navbar-nav" style="text-align:center;">
+
+                        @foreach (var unit in Model.PlayerYlianWebSiteViewModel.HeaderMenuList)
+                        {
+                            <li id="unit.PageName">
+                                <a title="@unit.PageTitle" href="@Html.Raw(unit.Link)">
+                                    <font size="4">@unit.PageTitleInChinese</font>
+                                    <br />
+                                    <font size="1">@unit.PageTitleInEnglish</font>
+                                </a>
+                            </li>
+                        }
+
+
+                        <li id="AboutPage">
+                            <a title="About" href="IndexPage#about">
+                                <font size="4">關於我們</font>
+                                <br />
+                                <font size="1">About</font>
+                            </a>
+                        </li>
+                        <li id="NewsPage">
+                            <a title="News" href="IndexPage#news">
+                                <font size="4">最新消息</font>
+                                <br />
+                                <font size="1">News</font>
+                            </a>
+                        </li>
+                        <li id="RoomInfoPage">
+                            <a title="RoomInfo" href="IndexPage#roomInfo">
+                                <font size="4">客房資訊</font>
+                                <br />
+                                <font size="1">Room Info</font>
+                            </a>
+                        </li>
+                        <li id="AttractionPage">
+                            <a title="Attraction" href="IndexPage#attraction">
+                                <font size="4">熱門景點</font>
+                                <br />
+                                <font size="1">Attraction</font>
+                            </a>
+                        </li>
+                        <li id="ContactPage">
+                            <a title="Contact" href="IndexPage#contact">
+                                <font size="4">聯絡我們</font>
+                                <br />
+                                <font size="1">Contact</font>
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="Maincontent" role="main">
+        @RenderBody()
+    </main>
+
+    <footer class="footerBottom" role="contentinfo">
+        <div class="container">
+            <small class="copyright" align="center">Copyright &copy;2015. 玩咖民宿 All rights reserved. (合法民宿編號:1196)</small>
+        </div>
+    </footer>
+    @*</div>*@
+
+    @*<script type='text/javascript' src="~/Content/JS/WeiKaMainJs.js"></script>*@
+    <script src="~/Scripts/bootstrap.js"></script>
+
+</body>
+</html>
+

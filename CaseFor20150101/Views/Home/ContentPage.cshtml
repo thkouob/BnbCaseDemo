@@ -1,0 +1,637 @@
+﻿@using CaseFor20150101.Models
+@model ThePriceModel
+@{
+    ViewBag.Title = "Welcome";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section>
+    <div id="roomTop" class="row" style="background: #303c40;padding-top:8%;color:azure;">
+
+        <div class="col-sm-6">
+            <h2 style="text-align:left;margin-left:80px;border-bottom: thin solid #808080;width: 40rem;padding-bottom:5px;padding-top:8%;">
+                <strong>Before reservation</strong><br />
+            </h2>
+            <h4 style="margin-left:80px;"><strong>訂房須知</strong></h4>
+            <h5 style="margin-left:80px;"><strong>訂房前請先讀我唷！(匯款視同接受以下規定)</strong></h5>
+            <div id="qualitycycle-wrapper" class="half-block toflip animated flipInY">
+                <div class="inner pad90" style="text-align:left;margin-bottom:50px;">
+                    <ul style="margin-left:90px;padding-right:100px;">
+
+                        <li>
+                            為維護現場房客住宿品質，僅接受預約訂房。如有訪客來訪，請留步於大廳內活動。
+                        </li>
+                        <li>
+                            抓緊難得的遊玩時間，現場不再佔用您寶貴時間收取尾款。請於住宿前完成全額匯款。入住時請攜帶訂房者證件核對即可。
+                        </li>
+                        <li>
+                            完成電話訂房後，請於三日內完成匯款。逾期房間無法保留，請見諒。
+                        </li>
+                        <li>
+                            完成匯款後，請來電告知訂房姓名&匯款帳號後五碼，以便查詢是否入帳，感謝您。
+                        </li>
+                        <li>
+                            請於晚上7:30前完成check-in手續，如需晚點辦理手續，請來電告知，感謝您。晚上7:30後check-in請配合使用密碼取房卡。
+                        </li>
+                        <li>
+                            入住&退房時間：下午3:00後&隔天中午11:00前。
+                        </li>
+                        <li>
+                            為維護住宿品質，請依房型人數入住。如需加人(沙發床)，請事先告知，費用另計。
+                        </li>
+                        <li>
+                            為維護住宿品質，室內請勿吸菸、飲酒及嚼食檳榔;請勿攜帶寵物，不便之處敬請包涵。
+                        </li>
+                        <li>
+                            維護住宿品質，請輕聲細語。相互尊重彼此空間內的安寧，感謝您。
+                        </li>
+                        <li>
+                            謝絕任何派對活動，如有欺瞞與不正當行為，玩咖民宿有權取消與變更訂房。
+                        </li>
+                        <li>
+                            個人貴重物品請妥善保管，如有遺失，恕不負責，敬請見諒。
+                        </li>
+                        <li>
+                            如遇天災，將依照宜蘭縣政府發布『停班』規定，可延期住宿並保留三個月，並請於期限內擇期入住。
+                        </li>
+                        <li>
+                            更改住宿日期：請於入住前一週告知，可保留訂房權利三個月。
+                        </li>
+                        <li>
+                            入住期間，請勿擅自搬動房內物品＆擺飾或將民宿內物品攜出館外（如大小浴巾），如有損壞、遺失，須照價賠償。
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6" style="color:darkslategray;padding-left:0;padding-right:0;">
+            <div class="col-sm-3" style="padding-top:36%;padding-bottom:36%;background-image: url('../../Content/Image/longmenu01.jpg');background-position: center center;background-size: cover;">
+                <p><a href=""></a></p>
+            </div>
+            <div class="col-sm-3" style="padding-top:36%;padding-bottom:36%;background-image: url('../../Content/Image/longmenu02.jpg');background-position: center center;background-size: cover;">
+                <p><a href=""></a></p>
+            </div>
+            <div class="col-sm-3" style="padding-top:36%;padding-bottom:36%;background-image: url('../../Content/Image/longmenu03.jpg');background-position: center center;background-size: cover;">
+                <p><a href=""></a></p>
+            </div>
+            <div class="col-sm-3" style="padding-top:36%;padding-bottom:36%;background-image: url('../../Content/Image/longmenu04.jpg');background-position: center center;background-size: cover;">
+                <p><a href=""></a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="room102" style="border-top:135px solid transparent;margin: -135px 0 0;">
+    <div class="row" style="background-color:aliceblue;padding-top:3%;padding-bottom:3%;">
+        <div class="col-sm-4" style="padding:0;text-align:center;background-color:#27293e;">
+            <img src="~/Content/Image/room10201.jpg" style="margin:0;max-width:100%;" id="rb10201" />
+            <img src="~/Content/Image/room10202.jpg" style="margin:0;max-width:100%;display:none;" id="rb10202" />
+            <img src="~/Content/Image/room10203.jpg" style="margin:0;max-width:100%;display:none;" id="rb10203" />
+            <img src="~/Content/Image/room10204.jpg" style="margin:0;max-width:100%;display:none;" id="rb10204" />
+            <img src="~/Content/Image/room10205.jpg" style="margin:0;max-width:100%;display:none;" id="rb10205" />
+        </div>
+
+        <div class="col-sm-4">
+            <h2 style="text-align:left;border-bottom: thin solid #808080;width: 18rem;padding-bottom:5px;padding-top:32px;margin-left:30px;">
+                <strong>102(雙人房)</strong><br />
+            </h2>
+            <div style="background-color:transparent;margin-left:5%;font-size:16px;">
+                <h4 style="margin-left:10px;"><strong>滿載夢想的極光列車</strong></h4>
+            </div>
+
+            <div id="qualitycycle-wrapper" class="half-block toflip animated fl;ipInY">
+                <div class="inner pad90" style="text-align:left;margin-bottom:50px;margin-left:50px;margin-right:60px;">
+                    <div class="col-sm-4" style="padding-left:0;padding-right:2%;">
+                        <a id="rs10201" onclick="javascript: LittlePicDisPlay(102, 1);"><img src="~/Content/Image/smallroom10201.jpg" width="100%" style="padding-bottom:5%;" /></a><br />
+                        <a id="rs10204" onclick="javascript: LittlePicDisPlay(102, 4);"><img src="~/Content/Image/smallroom10204.jpg" width="100%" /></a>
+                    </div>
+                    <div class="col-sm-4" style="padding-left:0;padding-right:2%;">
+                        <a id="rs10202" onclick="javascript: LittlePicDisPlay(102, 2);"><img src="~/Content/Image/smallroom10202.jpg" width="100%" style="padding-bottom:5%;" /></a>
+                        <a id="rs10205" onclick="javascript: LittlePicDisPlay(102, 5);"><img src="~/Content/Image/smallroom10205.jpg" width="100%" /></a>
+                    </div>
+                    <div class="col-sm-4" style="padding-left:0;padding-right:2%;">
+                        <a id="rs10203" onclick="javascript: LittlePicDisPlay(102, 3);"><img src="~/Content/Image/smallroom10203.jpg" width="100%" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <h3 style="text-align:left;border-bottom: thin solid #808080;width: 12rem;padding-bottom:5px;padding-top:40px;font-size:22px;">
+                <strong>
+                    價格<a style="color:#303c40" onclick="javascript: DisplayInfo();">
+                        <div class="glyphicon glyphicon-info-sign" style="font-size:12px;margin-left:5px;"></div>
+                    </a>
+                </strong><br />
+            </h3>
+            <table class="table" style="text-align:center;font-size:15px;">
+                <thead style="text-align:center;">
+                    <tr>
+                        <th>平日<br />(定價打6折)</th>
+                        <th>假日</th>
+                        <th>定價<br />(春節初一至初五)</th>
+
+                    </tr>
+                </thead>
+                <tbody style="text-align:center;">
+                    <tr>
+                        <td>$@Model.RoomPriceList[0].WorkDayPrice</td>
+                        <td>$@Model.RoomPriceList[0].WeekEndPrice</td>
+                        <td>$@Model.RoomPriceList[0].HoildayPrice</td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <h3 style="text-align:left;border-bottom: thin solid #808080;width: 12rem;padding-bottom:5px;padding-top:40px;font-size:22px;">
+                <strong>房內設施</strong><br />
+            </h3>
+            <ul style="font-size:15px;">
+                <div class="col-sm-6">
+                    <li>標準床*1</li>
+                    <li>花崗石地板</li>
+                    <li>客廳</li>
+                    <li>冰箱</li>
+                    <li>完善盥洗用品(上山採藥系列)</li>
+                    <li>吹風機</li>
+                </div>
+                <div class="col-sm-6">
+                    <li>24小時免費無線網路</li>
+                    <li>豪華沙發</li>
+                    <li>快煮熱水壺</li>
+                    <li>乾濕分離衛浴</li>
+                    <li>礦泉水</li>
+                    <li>即溶咖啡</li>
+                </div>
+            </ul>
+        </div>
+        <div style="text-align:right;background-color:transparent;padding-top:25%;padding-right:2%;">
+            <a href="IndexPage#roomInfo" style="font-size: 18px;text-decoration:none;color:#303c40;">
+                <img src="~/Content/SvgImage/logo20140129.png" />
+                回客房資訊
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="room202" style="border-top:135px solid transparent;margin: -135px 0 0;">
+    <div class="row" style="background-color:#e1ebf5;padding-top:3%;padding-bottom:3%;">
+        <div class="col-sm-4" style="padding:0;text-align:center;background-color:#27293e;">
+            <img src="~/Content/Image/room20201.jpg" style="margin:0;max-width:100%;" id="rb20201" />
+            <img src="~/Content/Image/room20202.jpg" style="margin:0;max-width:100%;display:none;" id="rb20202" />
+            <img src="~/Content/Image/room20203.jpg" style="margin:0;max-width:100%;display:none;" id="rb20203" />
+            <img src="~/Content/Image/room20204.jpg" style="margin:0;max-width:100%;display:none;" id="rb20204" />
+            <img src="~/Content/Image/room20205.jpg" style="margin:0;max-width:100%;display:none;" id="rb20205" />
+        </div>
+        <div class="col-sm-4">
+            <h2 style="text-align:left;border-bottom: thin solid #808080;width: 18rem;padding-bottom:5px;padding-top:20px;margin-left:30px;">
+                <strong>202(雙人房)</strong><br />
+            </h2>
+
+            <div style="background-color:transparent;margin-left:5%;font-size:16px;">
+                <h4 style="margin-left:10px;"><strong>兩人時光的浪漫河畔</strong></h4>
+            </div>
+
+            <div id="qualitycycle-wrapper" class="half-block toflip animated fl;ipInY">
+                <div class="inner pad90" style="text-align:left;margin-bottom:50px;margin-left:50px;margin-right:60px;">
+                    <div class="col-sm-4" style="padding-left:0;padding-right:2%;">
+                        <a id="rs20201" onclick="javascript: LittlePicDisPlay(202, 1);"><img src="~/Content/Image/smallroom20201.jpg" width="100%" style="padding-bottom:5%;" /></a><br />
+                        <a id="rs20204" onclick="javascript: LittlePicDisPlay(202, 4);"><img src="~/Content/Image/smallroom20204.jpg" width="100%" /></a>
+                    </div>
+                    <div class="col-sm-4" style="padding-left:0;padding-right:2%;">
+                        <a id="rs20202" onclick="javascript: LittlePicDisPlay(202, 2);"><img src="~/Content/Image/smallroom20202.jpg" width="100%" style="padding-bottom:5%;" /></a>
+                        <a id="rs20205" onclick="javascript: LittlePicDisPlay(202, 5);"><img src="~/Content/Image/smallroom20205.jpg" width="100%" /></a>
+                    </div>
+                    <div class="col-sm-4" style="padding-left:0;padding-right:2%;">
+                        <a id="rs20203" onclick="javascript: LittlePicDisPlay(202, 3);"><img src="~/Content/Image/smallroom20203.jpg" width="100%" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <h4 style="text-align:left;border-bottom: thin solid #808080;width: 12rem;padding-bottom:5px;padding-top:40px;font-size:22px;">
+                <strong>
+                    價格<a style="color:#303c40">
+                        <div class="glyphicon glyphicon-info-sign" style="font-size:12px;margin-left:5px;"></div>
+                    </a>
+                </strong><br />
+            </h4>
+            <table class="table" style="text-align:center;font-size:15px;">
+                <thead style="text-align:center;">
+                    <tr>
+                        <th>平日<br />(定價打6折)</th>
+                        <th>假日</th>
+                        <th>定價<br />(春節初一至初五)</th>
+
+                    </tr>
+                </thead>
+                <tbody style="text-align:center;">
+                    <tr>
+                        <td>$@Model.RoomPriceList[1].WorkDayPrice</td>
+                        <td>$@Model.RoomPriceList[1].WeekEndPrice</td>
+                        <td>$@Model.RoomPriceList[1].HoildayPrice</td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <h4 style="text-align:left;border-bottom: thin solid #808080;width: 12rem;padding-bottom:5px;padding-top:40px;font-size:22px;">
+                <strong>房內設施</strong><br />
+            </h4>
+            <ul style="font-size:15px;">
+                <div class="col-sm-6">
+                    <li>標準床*1</li>
+                    <li>花崗石地板</li>
+                    <li>客廳</li>
+                    <li>冰箱</li>
+                    <li>完善盥洗用品(上山採藥系列)</li>
+                    <li>吹風機</li>
+                </div>
+                <div class="col-sm-6">
+                    <li>24小時免費無線網路</li>
+                    <li>豪華沙發/沙發床(費用另計)</li>
+                    <li>快煮熱水壺</li>
+                    <li>乾濕分離衛浴</li>
+                    <li>礦泉水</li>
+                    <li>即溶咖啡</li>
+                </div>
+            </ul>
+        </div>
+        <div style="text-align:right;background-color:transparent;padding-top:25%;padding-right:2%;">
+            <a href="IndexPage#roomInfo" style="font-size: 20px;text-decoration:none;color:#303c40;">
+                <img src="~/Content/SvgImage/logo20140129.png" />
+                回客房資訊
+            </a>
+        </div>
+    </div>
+
+</section>
+<section id="room302" style="border-top:135px solid transparent;margin: -135px 0 0;">
+    <div class="row" style="background-color:aliceblue;padding-top:3%;padding-bottom:3%;">
+        <div class="col-sm-4" style="padding:0;text-align:center;background-color:#27293e;">
+            <img src="~/Content/Image/room30201.jpg" style="margin:0;max-width:100%;" id="rb30201" />
+            <img src="~/Content/Image/room30202.jpg" style="margin:0;max-width:100%;display:none;" id="rb30202" />
+            <img src="~/Content/Image/room30203.jpg" style="margin:0;max-width:100%;display:none;" id="rb30203" />
+            <img src="~/Content/Image/room30204.jpg" style="margin:0;max-width:100%;display:none;" id="rb30204" />
+            <img src="~/Content/Image/room30205.jpg" style="margin:0;max-width:100%;display:none;" id="rb30205" />
+        </div>
+        <div class="col-sm-4">
+            <h2 style="text-align:left;border-bottom: thin solid #808080;width: 18rem;padding-bottom:5px;padding-top:20px;margin-left:30px;">
+                <strong>302(雙人房)</strong><br />
+            </h2>
+
+            <div style="background-color:transparent;margin-left:5%;font-size:16px;">
+                <h4 style="margin-left:10px;"><strong>雙雙漫步歐美小鎮</strong></h4>
+            </div>
+
+            <div id="qualitycycle-wrapper" class="half-block toflip animated fl;ipInY">
+                <div class="inner pad90" style="text-align:left;margin-bottom:50px;margin-left:50px;margin-right:60px;">
+                    <div class="col-sm-4" style="padding-left:0;padding-right:2%;">
+                        <a id="rs30201" onclick="javascript: LittlePicDisPlay(302, 1);"><img src="~/Content/Image/smallroom30201.jpg" width="100%" style="padding-bottom:5%;" /></a><br />
+                        <a id="rs30204" onclick="javascript: LittlePicDisPlay(302, 4);"><img src="~/Content/Image/smallroom30204.jpg" width="100%" /></a>
+                    </div>
+                    <div class="col-sm-4" style="padding-left:0;padding-right:2%;">
+                        <a id="rs30202" onclick="javascript: LittlePicDisPlay(302, 2);"><img src="~/Content/Image/smallroom30202.jpg" width="100%" style="padding-bottom:5%;" /></a>
+                        <a id="rs30205" onclick="javascript: LittlePicDisPlay(302, 5);"><img src="~/Content/Image/smallroom30205.jpg" width="100%" /></a>
+                    </div>
+                    <div class="col-sm-4" style="padding-left:0;padding-right:2%;">
+                        <a id="rs30203" onclick="javascript: LittlePicDisPlay(302, 3);"><img src="~/Content/Image/smallroom30203.jpg" width="100%" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <h4 style="text-align:left;border-bottom: thin solid #808080;width: 12rem;padding-bottom:5px;padding-top:40px;font-size:22px;">
+                <strong>
+                    價格<a style="color:#303c40">
+                        <div class="glyphicon glyphicon-info-sign" style="font-size:12px;margin-left:5px;"></div>
+                    </a>
+                </strong><br />
+            </h4>
+            <table class="table" style="text-align:center;font-size:15px;">
+                <thead style="text-align:center;">
+                    <tr>
+                        <th>平日<br />(定價打6折)</th>
+                        <th>假日</th>
+                        <th>定價<br />(春節初一至初五)</th>
+
+                    </tr>
+                </thead>
+                <tbody style="text-align:center;">
+                    <tr>
+                        <td>$@Model.RoomPriceList[2].WorkDayPrice</td>
+                        <td>$@Model.RoomPriceList[2].WeekEndPrice</td>
+                        <td>$@Model.RoomPriceList[2].HoildayPrice</td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <h4 style="text-align:left;border-bottom: thin solid #808080;width: 12rem;padding-bottom:5px;padding-top:40px;font-size:22px;">
+                <strong>房內設施</strong><br />
+            </h4>
+            <ul style="font-size:15px;">
+                <div class="col-sm-6">
+                    <li>標準床*1</li>
+                    <li>花崗石地板</li>
+                    <li>客廳</li>
+                    <li>冰箱</li>
+                    <li>完善盥洗用品(上山採藥系列)</li>
+                    <li>吹風機</li>
+                </div>
+                <div class="col-sm-6">
+                    <li>24小時免費無線網路</li>
+                    <li>豪華沙發/沙發床(費用另計)</li>
+                    <li>快煮熱水壺</li>
+                    <li>乾濕分離衛浴</li>
+                    <li>礦泉水</li>
+                    <li>即溶咖啡</li>
+                </div>
+            </ul>
+        </div>
+        <div style="text-align:right;background-color:transparent;padding-top:25%;padding-right:2%;">
+            <a href="IndexPage#roomInfo" style="font-size: 20px;text-decoration:none;color:#303c40;">
+                <img src="~/Content/SvgImage/logo20140129.png" />
+                回客房資訊
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="fourPeople" style="display:none;border-top:135px solid transparent;margin: -135px 0 0;">
+    <div class="row" style="background-color:#e1ebf5;padding-top:3%;padding-bottom:3%;">
+        <div class="col-sm-4" style="padding:0;text-align:center;background-color:#27293e;">
+            <img src="~/Content/Image/room30501.jpg" style="margin:0;max-width:100%;" id="rb30501" />
+            <img src="~/Content/Image/room30502.jpg" style="margin:0;max-width:100%;display:none;" id="rb30502" />
+            <img src="~/Content/Image/room30503.jpg" style="margin:0;max-width:100%;display:none;" id="rb30503" />
+            <img src="~/Content/Image/room30504.jpg" style="margin:0;max-width:100%;display:none;" id="rb30504" />
+            <img src="~/Content/Image/room30505.jpg" style="margin:0;max-width:100%;display:none;" id="rb30505" />
+        </div>
+        <div class="col-sm-4">
+            <h2 style="text-align:left;border-bottom: thin solid #808080;width: 18rem;padding-bottom:5px;padding-top:20px;margin-left:30px;">
+                <strong>305(四人房)</strong><br />
+            </h2>
+            <h4 style="margin-left:30px;"><strong>陽台景觀四人房</strong></h4>
+            <div id="qualitycycle-wrapper" class="half-block toflip animated fl;ipInY">
+                <div class="inner pad90" style="text-align:left;margin-bottom:50px;margin-left:50px;margin-right:60px;">
+                    <div class="col-sm-4" style="padding-left:0;padding-right:2%;">
+                        <a id="rs30501" onclick="javascript: LittlePicDisPlay(305, 1);"><img src="~/Content/Image/smallroom30501.jpg" width="100%" style="padding-bottom:5%;" /></a><br />
+                        <a id="rs30504" onclick="javascript: LittlePicDisPlay(305, 4);"><img src="~/Content/Image/smallroom30504.jpg" width="100%" /></a>
+                    </div>
+                    <div class="col-sm-4" style="padding-left:0;padding-right:2%;">
+                        <a id="rs30502" onclick="javascript: LittlePicDisPlay(305, 2);"><img src="~/Content/Image/smallroom30502.jpg" width="100%" style="padding-bottom:5%;" /></a>
+                        <a id="rs30505" onclick="javascript: LittlePicDisPlay(305, 5);"><img src="~/Content/Image/smallroom30505.jpg" width="100%" /></a>
+                    </div>
+                    <div class="col-sm-4" style="padding-left:0;padding-right:2%;">
+                        <a id="rs30503" onclick="javascript: LittlePicDisPlay(305, 3);"><img src="~/Content/Image/smallroom30503.jpg" width="100%" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <h4 style="text-align:left;border-bottom: thin solid #808080;width: 12rem;padding-bottom:5px;padding-top:40px;font-size:22px;">
+                <strong>
+                    價格<a style="color:#303c40">
+                        <div class="glyphicon glyphicon-info-sign" style="font-size:12px;margin-left:5px;"></div>
+                    </a>
+                </strong><br />
+            </h4>
+            <table class="table" style="text-align:center;font-size:15px;">
+                <thead style="text-align:center;">
+                    <tr>
+                        <th>平日<br />(定價打6折)</th>
+                        <th>假日</th>
+                        <th>定價<br />(春節初一至初五)</th>
+
+                    </tr>
+                </thead>
+                <tbody style="text-align:center;">
+                    <tr>
+                        <td>$@Model.RoomPriceList[3].WorkDayPrice</td>
+                        <td>$@Model.RoomPriceList[3].WeekEndPrice</td>
+                        <td>$@Model.RoomPriceList[3].HoildayPrice</td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <h4 style="text-align:left;border-bottom: thin solid #808080;width: 12rem;padding-bottom:5px;padding-top:40px;font-size:22px;">
+                <strong>房內設施</strong><br />
+            </h4>
+            <ul style="font-size:15px;">
+                <div class="col-sm-6">
+                    <li>標準床*2</li>
+                    <li>花崗石地板</li>
+                    <li>客廳</li>
+                    <li>冰箱</li>
+                    <li>完善盥洗用品(上山採藥系列)</li>
+                    <li>吹風機</li>
+                </div>
+                <div class="col-sm-6">
+                    <li>24小時免費無線網路</li>
+                    <li>豪華沙發</li>
+                    <li>快煮熱水壺</li>
+                    <li>乾濕分離衛浴</li>
+                    <li>礦泉水</li>
+                    <li>即溶咖啡</li>
+                </div>
+            </ul>
+        </div>
+        <div style="text-align:right;background-color:transparent;padding-top:25%;padding-right:2%;">
+            <a href="IndexPage#roomInfo" style="font-size: 20px;text-decoration:none;color:#303c40;">
+                <img src="~/Content/SvgImage/logo20140129.png" />
+                回客房資訊
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="sixPeople" style="display:none;border-top:135px solid transparent;margin: -135px 0 0;">
+    <div class="row" style="background-color:aliceblue;padding-top:3%;padding-bottom:3%;">
+        <div class="col-sm-4" style="padding:0;text-align:center;background-color:#27293e;">
+            <img src="~/Content/Image/room20601.jpg" style="margin:0;max-width:100%;" id="rb20601" />
+            <img src="~/Content/Image/room20602.jpg" style="margin:0;max-width:100%;display:none;" id="rb20602" />
+            <img src="~/Content/Image/room20603.jpg" style="margin:0;max-width:100%;display:none;" id="rb20603" />
+            <img src="~/Content/Image/room20604.jpg" style="margin:0;max-width:100%;display:none;" id="rb20604" />
+            <img src="~/Content/Image/room20605.jpg" style="margin:0;max-width:100%;display:none;" id="rb20605" />
+        </div>
+        <div class="col-sm-4">
+            <h2 style="text-align:left;border-bottom: thin solid #808080;width: 18rem;padding-bottom:5px;padding-top:20px;margin-left:30px;">
+                <strong>206(六人房)</strong><br />
+            </h2>
+            <h4 style="margin-left:30px;"><strong>幸福宜蘭景觀房</strong></h4>
+            <div id="qualitycycle-wrapper" class="half-block toflip animated fl;ipInY">
+                <div class="inner pad90" style="text-align:left;margin-bottom:50px;margin-left:50px;margin-right:60px;">
+                    <div class="col-sm-4" style="padding-left:0;padding-right:2%;">
+                        <a id="rs20601" onclick="javascript: LittlePicDisPlay(206, 1);"><img src="~/Content/Image/smallroom20601.jpg" width="100%" style="padding-bottom:5%;" /></a><br />
+                        <a id="rs20604" onclick="javascript: LittlePicDisPlay(206, 4);"><img src="~/Content/Image/smallroom20604.jpg" width="100%" /></a>
+                    </div>
+                    <div class="col-sm-4" style="padding-left:0;padding-right:2%;">
+                        <a id="rs20602" onclick="javascript: LittlePicDisPlay(206, 2);"><img src="~/Content/Image/smallroom20602.jpg" width="100%" style="padding-bottom:5%;" /></a>
+                        <a id="rs20605" onclick="javascript: LittlePicDisPlay(206, 5);"><img src="~/Content/Image/smallroom20605.jpg" width="100%" /></a>
+                    </div>
+                    <div class="col-sm-4" style="padding-left:0;padding-right:2%;">
+                        <a id="rs20603" onclick="javascript: LittlePicDisPlay(206, 3);"><img src="~/Content/Image/smallroom20603.jpg" width="100%" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <h4 style="text-align:left;border-bottom: thin solid #808080;width: 12rem;padding-bottom:5px;padding-top:40px;font-size:22px;">
+                <strong>
+                    價格<a style="color:#303c40">
+                        <div class="glyphicon glyphicon-info-sign" style="font-size:12px;margin-left:5px;"></div>
+                    </a>
+                </strong><br />
+            </h4>
+            <table class="table" style="text-align:center;font-size:15px;">
+                <thead style="text-align:center;">
+                    <tr>
+                        <th>平日<br />(定價打6折)</th>
+                        <th>假日</th>
+                        <th>定價<br />(春節初一至初五)</th>
+
+                    </tr>
+                </thead>
+                <tbody style="text-align:center;">
+                    <tr>
+                        <td>$@Model.RoomPriceList[4].WorkDayPrice</td>
+                        <td>$@Model.RoomPriceList[4].WeekEndPrice</td>
+                        <td>$@Model.RoomPriceList[4].HoildayPrice</td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <h4 style="text-align:left;border-bottom: thin solid #808080;width: 12rem;padding-bottom:5px;padding-top:40px;font-size:22px;">
+                <strong>房內設施</strong><br />
+            </h4>
+            <ul style="font-size:15px;">
+                <div class="col-sm-6">
+                    <li>標準床*3</li>
+                    <li>花崗石地板</li>
+                    <li>客廳</li>
+                    <li>冰箱</li>
+                    <li>完善盥洗用品(上山採藥系列)</li>
+                    <li>吹風機</li>
+                </div>
+                <div class="col-sm-6">
+                    <li>24小時免費無線網路</li>
+                    <li>豪華沙發</li>
+                    <li>快煮熱水壺</li>
+                    <li>乾濕分離衛浴</li>
+                    <li>礦泉水</li>
+                    <li>即溶咖啡</li>
+                </div>
+            </ul>
+        </div>
+        <div style="text-align:right;background-color:transparent;padding-top:25%;padding-right:2%;">
+            <a href="IndexPage#roomInfo" style="font-size: 20px;text-decoration:none;color:#303c40;">
+                <img src="~/Content/SvgImage/logo20140129.png" />
+                回客房資訊
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="eightPeople" style="display:none;border-top:135px solid transparent;margin: -135px 0 0;">
+    <div class="row" style="background-color:#e1ebf5;padding-top:3%;padding-bottom:3%;">
+        <div class="col-sm-4" style="padding:0;text-align:center;background-color:#27293e;">
+            <img src="~/Content/Image/room10801.jpg" style="margin:0;max-width:100%;" id="rb10801" />
+            <img src="~/Content/Image/room10802.jpg" style="margin:0;max-width:100%;display:none;" id="rb10802" />
+            <img src="~/Content/Image/room10803.jpg" style="margin:0;max-width:100%;display:none;" id="rb10803" />
+            <img src="~/Content/Image/room10804.jpg" style="margin:0;max-width:100%;display:none;" id="rb10804" />
+            <img src="~/Content/Image/room10805.jpg" style="margin:0;max-width:100%;display:none;" id="rb10805" />
+        </div>
+        <div class="col-sm-4">
+            <h2 style="text-align:left;border-bottom: thin solid #808080;width: 18rem;padding-bottom:5px;padding-top:20px;margin-left:30px;">
+                <strong>108(八人房)</strong><br />
+            </h2>
+            <h4 style="margin-left:30px;"><strong>派對時光的大空間</strong></h4>
+            <div id="qualitycycle-wrapper" class="half-block toflip animated fl;ipInY">
+                <div class="inner pad90" style="text-align:left;margin-bottom:50px;margin-left:50px;margin-right:60px;">
+                    <div class="col-sm-4" style="padding-left:0;padding-right:2%;">
+                        <a id="rs10801" onclick="javascript: LittlePicDisPlay(108, 1);"><img src="~/Content/Image/smallroom10801.jpg" width="100%" style="padding-bottom:5%;" /></a><br />
+                        <a id="rs10804" onclick="javascript: LittlePicDisPlay(108, 4);"><img src="~/Content/Image/smallroom10804.jpg" width="100%" /></a>
+                    </div>
+                    <div class="col-sm-4" style="padding-left:0;padding-right:2%;">
+                        <a id="rs10802" onclick="javascript: LittlePicDisPlay(108, 2);"><img src="~/Content/Image/smallroom10802.jpg" width="100%" style="padding-bottom:5%;" /></a>
+                        <a id="rs10805" onclick="javascript: LittlePicDisPlay(108, 5);"><img src="~/Content/Image/smallroom10805.jpg" width="100%" /></a>
+                    </div>
+                    <div class="col-sm-4" style="padding-left:0;padding-right:2%;">
+                        <a id="rs10803" onclick="javascript: LittlePicDisPlay(108, 3);"><img src="~/Content/Image/smallroom10803.jpg" width="100%" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <h4 style="text-align:left;border-bottom: thin solid #808080;width: 12rem;padding-bottom:5px;padding-top:40px;font-size:22px;">
+                <strong>
+                    價格<a style="color:#303c40">
+                        <div class="glyphicon glyphicon-info-sign" style="font-size:12px;margin-left:5px;"></div>
+                    </a>
+                </strong><br />
+            </h4>
+            <table class="table" style="text-align:center;font-size:15px;">
+                <thead style="text-align:center;">
+                    <tr>
+                        <th>平日<br />(定價打6折)</th>
+                        <th>假日</th>
+                        <th>定價<br />(春節初一至初五)</th>
+
+                    </tr>
+                </thead>
+                <tbody style="text-align:center;">
+                    <tr>
+                        <td>$@Model.RoomPriceList[5].WorkDayPrice</td>
+                        <td>$@Model.RoomPriceList[5].WeekEndPrice</td>
+                        <td>$@Model.RoomPriceList[5].HoildayPrice</td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <h4 style="text-align:left;border-bottom: thin solid #808080;width: 12rem;padding-bottom:5px;padding-top:40px;font-size:22px;">
+                <strong>房內設施</strong><br />
+            </h4>
+            <ul style="font-size:15px;">
+                <div class="col-sm-6">
+                    <li>標準床*4</li>
+                    <li>花崗石地板</li>
+                    <li>客廳</li>
+                    <li>冰箱</li>
+                    <li>完善盥洗用品(上山採藥系列)</li>
+                    <li>吹風機</li>
+                </div>
+                <div class="col-sm-6">
+                    <li>24小時免費無線網路</li>
+                    <li>豪華沙發</li>
+                    <li>快煮熱水壺</li>
+                    <li>乾濕分離衛浴</li>
+                    <li>礦泉水</li>
+                    <li>即溶咖啡</li>
+                </div>
+            </ul>
+        </div>
+        <div style="text-align:right;background-color:transparent;padding-top:25%;padding-right:2%;">
+            <a href="IndexPage#roomInfo" style="font-size: 20px;text-decoration:none;color:#303c40;">
+                <img src="~/Content/SvgImage/logo20140129.png" />
+                回客房資訊
+            </a>
+        </div>
+    </div>
+</section>
+<script>
+    function DisplayInfo() {
+        $("#fourPeople").show();
+        $("#sixPeople").show();
+        $("#eightPeople").show();
+    };
+
+    function CloseAllBigPic(room) {
+
+        for (var i = 1; i < 6; i++) {
+            var picNum = "#rb" + room + "0";
+            picNum += i;
+            $(picNum).hide();
+        }
+    };
+
+    function LittlePicDisPlay(room, num) {
+        var bigPic = "#rb" + room + "0" + num;
+        CloseAllBigPic(room);
+        $(bigPic).show();
+    };
+</script>

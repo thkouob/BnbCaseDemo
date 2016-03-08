@@ -1,0 +1,112 @@
+﻿@using CaseFor20150101.Models
+@model UserEditViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UserEdit</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type='text/css' media='all' />
+</head>
+<body>
+
+    @using (Html.BeginForm("UserEdit", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    {<div class="row" style="padding-top:5%;">
+        <div class="col-sm-5">
+            <h1>Update News</h1>
+            <div class="input-group" style="padding:10px 0;">
+                <span class="input-group-addon" id="basic-addon1">房間編號</span>
+
+                @Html.DropDownListFor(model => model.NewsId, Model.NewsNumberList, new
+           {
+               @class = "form-control"
+           })
+
+            </div>
+
+            <div class="input-group" style="padding:10px 0;">
+                <span class="input-group-addon" id="basic-addon1">&nbsp;&nbsp;&nbsp;標題&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                @Html.TextBoxFor(model => model.Title, new
+           {
+               @class = "form-control",
+               placeholder = "title",
+
+           })
+            </div>
+
+            <div class="input-group" style="padding:10px 0;">
+                <span class="input-group-addon" id="basic-addon1">&nbsp;&nbsp;&nbsp;內容&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                @Html.TextAreaFor(model => model.Content, new
+           {
+               @class = "form-control",
+               placeholder = "content",
+
+           })
+            </div>
+            @Html.HiddenFor(model => model.Action, new { Value = "1" })
+            <button type="submit" class="btn btn-default" style="background-color:transparent;margin-top:15px;padding:15px;font-size:16px;">
+                <strong>submit</strong>
+            </button>
+
+        </div>
+    </div>
+    }
+
+    @using (Html.BeginForm("UserEdit", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    {<div class="row" style="padding-top:5%;">
+        <div class="col-sm-5">
+            <h1>Update Room Price</h1>
+            <div class="input-group" style="padding:10px 0;">
+                <span class="input-group-addon" id="basic-addon1">房間編號</span>
+
+                @Html.DropDownListFor(model => model.RoomsId, Model.RoomNumberList, new
+           {
+               @class="form-control"
+           })
+
+            </div>
+
+            <div class="input-group" style="padding:10px 0;">
+                <span class="input-group-addon" id="basic-addon1">平日價格</span>
+                @Html.TextBoxFor(model => model.WorkDayPrice, new
+           {
+               @class = "form-control",
+               placeholder = "price, ex:1000",
+
+           })
+            </div>
+            <div class="input-group" style="padding:10px 0;">
+                <span class="input-group-addon" id="basic-addon1">假日價格</span>
+                @Html.TextBoxFor(model => model.WeekEndPrice, new
+           {
+               @class = "form-control",
+               placeholder = "price, ex:1000",
+
+           })
+            </div>
+            <div class="input-group" style="padding:10px 0;">
+                <span class="input-group-addon" id="basic-addon1">&nbsp;&nbsp;&nbsp;定價&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                @Html.TextBoxFor(model => model.HoildayPrice, new
+           {
+               @class = "form-control",
+               placeholder = "price, ex:1000",
+
+           })
+            </div>
+            @Html.HiddenFor(model => model.Action, new { Value = "2" })
+            <button type="submit" class="btn btn-default" style="background-color:transparent;margin-top:15px;padding:15px;font-size:16px;">
+                <strong>submit</strong>
+            </button>
+
+        </div>
+    </div>
+    }
+
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+﻿@using CaseFor20150101.Models
+@model PlayerYlianWebSiteViewModel
+@{
+
+    ViewBag.Title = "Welcome";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section style="background: #303c40;">
+    <div id="image_carousel" class="carousel slide carousel-fade col-offset-2" data-ride="carousel" data-interval="5000" style="border-top:135px solid transparent;position: relative;">
+
+        <ol class="carousel-indicators">
+            <li data-target="#image_carousel" data-slide-to="0" class=""></li>
+            <li data-target="#image_carousel" data-slide-to="1" class=""></li>
+            <li data-target="#image_carousel" data-slide-to="2" class=""></li>
+            <li data-target="#image_carousel" data-slide-to="3" class=""></li>
+            <li data-target="#image_carousel" data-slide-to="4" class="active"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel_background item repeating_background" style="background-color: #27293e">
+                <div class="carousel_image_container">
+                    <a href="ContentPage">
+                        <img src="../../Content/Image/menu01.png"
+                             srcset="./assets-redesign/images-redesign/slider_images/MOBILE-SIZE.png 500w, ../../Content/Image/menu01.png 1168w"
+                             class="img-responsive" style="width:100%;">
+                    </a>
+                </div>
+            </div>
+            <div class="carousel_background item repeating_background" style="background-color: #27293e">
+                <!--- TODO - remove class 'border' if you're not using a border, duh!-->
+                <div class="carousel_image_container">
+                    <a href="ContentPage">
+                        <img src="../../Content/Image/meun02.png"
+                             srcset="./assets-redesign/images-redesign/slider_images/MOBILE-SIZE.png 500w, ../../Content/Image/meun02.png 1168w"
+                             class="img-responsive" style="width:100%;">
+                    </a>
+                </div>
+
+            </div>
+            <!--- TODO - remove class 'repeating background' if you're not using a repeating backgroud, duh!-->
+            <div class="carousel_background item repeating_background" style="background-color: #27293e">
+                <div class="carousel_image_container">
+                    <a href="ContentPage">
+                        <img src="../../Content/Image/menu03.png"
+                             srcset="./assets-redesign/images-redesign/slider_images/MOBILE-SIZE.png 500w, ../../Content/Image/menu03.png 1168w"
+                             class="img-responsive" style="width:100%;">
+                    </a>
+                </div>
+            </div>
+            <div class="carousel_background item repeating_background" style="background-color: #27293e">
+                <div class="carousel_image_container">
+                    <a href="ContentPage">
+                        <img src="../../Content/Image/menu04.png"
+                             srcset="./assets-redesign/images-redesign/slider_images/MOBILE-SIZE.png 500w, ../../Content/Image/menu04.png 1168w"
+                             class="img-responsive" style="width:100%;">
+                    </a>
+                </div>
+            </div>
+            <div class="carousel_background item repeating_background active" style="background-color: #27293e">
+                <div class="carousel_image_container">
+                    <a href="ContentPage">
+                        <img src="../../Content/Image/menu05.png"
+                             srcset="./assets-redesign/images-redesign/slider_images/MOBILE-SIZE.png 500w, ../../Content/Image/menu05.png 1168w"
+                             class="img-responsive" style="width:100%;">
+                    </a>
+                </div>
+            </div>
+            <!-- TODO - if you want to add an extra image fill this out-->
+            <!--div class="carousel_background item">
+                <a href="WHATEVER THE LINK SHOULD BE">
+                    <div class="carousel_image_container">
+                         NOTE - for the image src link to the desktop/tablet size,
+                         then for the srcset put the link to mobile sized image followed by 500w (this means this image will be shown upto a max width of 500px),
+                         and put the link to the desktop sized image followed by 1168w (because we have set the max width of the container as 1168px)
+                         See example:
+                        <img src="./assets-redesign/images-redesign/slider_images/DESKTOP-SIZE.png" srcset="./assets-redesign/images-redesign/slider_images/MOBILE-SIZE.png 500w, ./assets-redesign/images-redesign/slider_images/DESKTOP_SIZE.png 1168w" class="img-responsive border"/>
+                    </div>
+                </a>
+            </div>-->
+        </div>
+    </div>
+</section>
+<section id="about" class="banner homepage" style="border-top:135px solid transparent;margin: -135px 0 0;">
+    <div class="container inner" style="padding-bottom:100px;">
+        <h2 style="padding-top:2%;padding-bottom:2%;"><b>關於我們</b></h2>
+        <p style="line-height:40px;font-size:13px;">
+            玩咖民宿位於樸實的宜蘭縣，指定使用飯店級的建材，新穎的設備，環境乾淨舒適、明亮溫馨；
+            <br />
+            邀請設計師獨家為各個客房著手設計與規劃。
+            <br />
+            客房內的異國風情與每房獨有的宜蘭招牌田野風光，構成視覺與心靈的”雙旅行”！
+            <br />
+            讓夜宿宜蘭不再只是住宿，而是享受與家人、愛人、好友在房內的時光。
+            <br />
+            玩咖民宿的我們是土生土長的宜蘭囡仔，想將身為宜蘭人的熱情，加上我們的用心來呈現給您。
+            <br />
+            來宜蘭找玩咖民宿交個朋友吧！
+            <br />
+            輕旅行，看看生活中的美好，玩在宜蘭，幸福如此簡單！
+            <br />
+            玩咖民宿，讓你放心的落腳處。
+        </p>
+    </div><!-- /.container -->
+</section>
+
+<section id="news" style="border-top:135px solid transparent;margin: -135px 0 0;-webkit-transform: translateZ(0);">
+    <div class="row" style="background:#27293e;">
+        <div class="col-sm-6" style="text-align: center; background-color: #E4E4E4;">
+            <h2 style="text-align:left;margin-left:80px;border-bottom: thin solid #505050;width: 12rem;padding-bottom:5px;padding-top:4%;">
+                <strong>News</strong><br />
+            </h2>
+
+            <div id="qualitycycle-wrapper" class="half-block toflip animated fl;ipInY">
+                <div class="inner pad90" style="text-align:left;margin-bottom:80px;">
+                    <ul style="margin-left:10%;padding-right:20%;">
+                        @foreach (var unit in Model.TheNewsModel.TheNewsList)
+                        {
+                            <li>
+                                <strong style="font-size:16px;">@unit.Title</strong>
+                                <br />
+                                <p style="margin-top:10px;">
+                                    @unit.Content
+                                </p>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6" style="padding:0;text-align:center;background-color:#27293e;">
+            <img src="~/Content/Image/newsbackground.png"
+                 srcset="~/Content/Image/newsbackground.png 1168w"
+                 style="margin:0;max-width:100%;vertical-align:use-script;" />
+        </div>
+    </div>
+</section>
+
+<section>
+    <div id="roomInfo" class="row" style="border-top:135px solid transparent;margin: -135px 0 0;">
+        <div id="qualitytest-wrapper" class="full-block" style="text-align:center;color:aliceblue;">
+
+            <div class="inner pad100" style="padding-top:6%;padding-left:50%;text-align:left;padding-bottom:12%;">
+                <h2 style="margin-bottom:5px;"><strong>客房資訊</strong></h2>
+                <h3 style="margin-top:0;margin-bottom:20px;"><strong>Room Information</strong></h3>
+                <p style="padding-right:40%;">
+                    客房內的異國風情與獨有的宜蘭招牌田野風光，構成視覺與心靈的”雙旅行”
+                    <br />
+                    溫馨舒適的客房、乾淨具隱私的環境
+                    <br />
+                    這趟安心又享受的旅行，選選想住哪個主題吧
+                    <br />
+                </p>
+                <ul style="font-size:15px;">
+                    <li><a href="ContentPage#room102" style="color:aliceblue;text-decoration:underline;font-size:22px;color: #87af3b;"><b>102(雙人房)</b></a><br /><p>滿載夢想的極光列車</p></li>
+                    <li><a href="ContentPage#room202" style="color:aliceblue;text-decoration:underline;font-size:22px;color: #87af3b;"><b>202(雙人房)</b></a><br /><p>兩人時光的浪漫河畔</p></li>
+                    <li><a href="ContentPage#room302" style="color:aliceblue;text-decoration:underline;font-size:22px;color: #87af3b;"><b>302(雙人房)</b></a><br /><p>雙雙漫步歐美小鎮</p></li>
+                </ul>
+                <a type="button" href="ContentPage" class="btn btn-default" style="background-color:transparent;margin-top:15px;padding:15px;font-size:16px;color:aliceblue;">
+                    <div class="glyphicon glyphicon-home"></div> <strong>訂房須知</strong>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="attraction" class="row" style="border-top:135px solid transparent;margin: -135px 0 0;">
+    <div style="padding-bottom:7%;background-color:aliceblue;padding-top:7%;">
+        <div class="row">
+            <div class="col-sm-1" style="background-color:aliceblue;">
+
+            </div>
+            <a href="SpotPage#Spot08">
+                <div class="col-sm-2" style="background-image: url('../../Content/Image/spot08.png');background-position: center center;background-size: cover;padding-top:250px;padding-left:8%;">
+                </div>
+            </a>
+            <a href="SpotPage#Spot07">
+                <div class="col-sm-2" style="background-image: url('../../Content/Image/spot07.png');background-position: center center;background-size: cover;padding-top:250px;padding-left:8%;">
+                </div>
+            </a>
+            <div class="col-sm-2" style="background-color:#505050;padding-top:20px;padding-bottom:20px;text-align:center;color:aliceblue;">
+                <h1>熱門景點</h1>
+                <h3>Attraction</h3>
+                <a href="SpotPage" style="color:aquamarine;"><div class="glyphicon glyphicon-picture" style="font-size:45px;padding-top:20px;padding-bottom:30px;"></div></a>
+            </div>
+            <a href="SpotPage#Spot06">
+                <div class="col-sm-2" style="background-image: url('../../Content/Image/spot06.png');background-position: center center;background-size: cover;padding-top:250px;padding-left:8%;">
+                </div>
+            </a>
+            <a href="SpotPage#Spot09">
+                <div class="col-sm-2" style="background-image: url('../../Content/Image/spot09.png');background-position: center center;background-size: cover;padding-top:250px;padding-left:8%;">
+                </div>
+            </a>
+            <div class="col-sm-1" style="background-color: aliceblue;">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1" style="background-color:aliceblue;">
+
+            </div>
+            <a href="SpotPage#Spot01">
+                <div class="col-sm-2" style="background-image: url('../../Content/Image/spot01.png');background-position: center center;background-size: cover;padding-top:250px;padding-left:8%;">
+                </div>
+            </a>
+            <a href="SpotPage#Spot02">
+                <div class="col-sm-2" style="background-image: url('../../Content/Image/spot02.png');background-position: center center;background-size: cover;padding-top:250px;padding-left:8%;">
+                </div>
+            </a>
+            <a href="SpotPage#Spot03">
+                <div class="col-sm-2" style="background-image: url('../../Content/Image/spot03.png');background-position: center center;background-size: cover;padding-top:250px;padding-left:8%;">
+                </div>
+            </a>
+            <a href="SpotPage#Spot04">
+                <div class="col-sm-2" style="background-image: url('../../Content/Image/spot04.png');background-position: center center;background-size: cover;padding-top:250px;padding-left:8%;">
+                </div>
+            </a>
+            <a href="SpotPage#Spot05">
+                <div class="col-sm-2" style="background-image: url('../../Content/Image/spot05.png');background-position: center center;background-size: cover;padding-top:250px;padding-left:8%;">
+                </div>
+            </a>
+            <div class="col-sm-1" style="background-color: aliceblue;">
+
+            </div>
+        </div>
+    </div><!-- /.container -->
+</section>
+<section class="ContactUsPage">
+    <div class="container" id="contact">
+        <div class="row clearfix">
+            <div class="tiles">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="glyphicon glyphicon-map-marker" style="font-size: 4em"></div>
+                    <h3><u>地址</u></h3>
+                    <h4 style="line-height:27px;">
+
+                        宜蘭縣五結鄉<br>
+                        親河路二段291巷52弄25號<br>
+                        (住宿提供免費停車位&早餐)
+
+                    </h4>
+
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="glyphicon glyphicon-envelope" style="font-size: 4em"></div>
+                    <h3><u>E-mail</u></h3>
+                    <h4><a href="mailto:playeryilan@gmail.com">playeryilan@gmail.com</a></h4>
+                    <h3><u>合法民宿編號</u></h3>
+                    <h4>1196</h4>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="glyphicon glyphicon-phone-alt" style="font-size: 4em"></div>
+                    <h3><u>連絡電話</u></h3>
+                    <h4 style="line-height:27px;">
+                        國內：0985.124.941<br />
+                        國外：+886 985.124.941
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-offset-1 col-sm-10">
+                <div class="heading-text">
+
+                    <h4 style="line-height:27px;">
+                        We provide English service.<br />
+                        Please email us if you need further information or assistance.We are glad to be your friend/family in Taiwan!
+                    </h4>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
